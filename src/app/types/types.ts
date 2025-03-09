@@ -8,4 +8,19 @@ type BookType = {
   updatedAt: string;
 };
 
-export type { BookType };
+type Purchase = {
+  id: string;
+  userId: string;
+  bookId: string;
+  sessionId: string;
+  createdAt: string;
+};
+
+type User = {
+  id: string;
+  name: string;
+  email: string;
+  image: string;
+};
+
+export type { BookType, Purchase, User };
